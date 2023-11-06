@@ -1,0 +1,231 @@
+body {
+     /*Stil für das Logo*/
+      .logo {
+        background-color: #000000;/*Schwarzer Hintergrund für das Logo*/
+        height: 100px;
+        width: auto; /*Automatische Breite des Logos*/
+      }
+      /*Stile für das Logo Bild*/
+      .logo img {
+        width: 380px; /*Breite des Bildes*/
+        padding: 15px; /*Innenabstand um das Logo Bild*/
+      }
+      .navi ul {
+        margin: 0 ;
+        padding: 0;
+      }
+      /*Stile für die Navigation*/
+      .navi a {
+        display: block;
+        color: #ffe4e1; /*Textfarbe*/
+        text-decoration: none; /*Keine Unterstreichung von Links*/
+        
+      } 
+      .navi ul li {
+        position: relative;
+        float:left;
+        font-weight: bold; /*Fetter Text*/
+        background-color: #000000; /*Schwarzer Hintergrund für Listenelement*/
+      }
+       
+      .navi ul li:hover {
+        background: #c0bbbb; /*Hellrosa Hintergrund beim Überfahren*/
+      }
+
+      .navi ul li a {
+        padding: 10px; /*Innenabstand in Listenelement*/
+        height: 30px; /*Höhe der Listenelemente*/
+        width: 60px; /*Breite der Listenelemente*/
+
+    }
+    h1{
+      font-family:monospace; /*Schriftart für h1-Element*/
+    }
+    
+      
+
+
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1; /* Hellrosa Hintergrund */
+    text-align: center; /*Text zentrieren*/
+    margin: 0;
+    padding: 0;
+}
+/*Stile für den Hauptinhalt*/
+main {
+    padding: 20px;
+}
+/*Stile für die Suchleiste*/
+.search-bar {
+    display: flex; /*Flexbox-Anordnung für die Suchleiste*/
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /*Kein Rahmen*/
+    border-radius: 5px; /*Abgerundete Ecken*/
+}
+.content-container{
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+/*Stile für den Suchen-Button*/
+button {
+    background-color: #000000; /* Dunkelrosa Button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer; /*Zeiger-Cursor bei Hover*/
+}
+/*Stile für Suchergebnisse*/
+.results{
+  margin-top: 5px; /*Obere Abstand der Suchergebnisse*/
+  padding: 5px; /*Innenabstand der Suchergebnisse*/
+  display: flex;
+  flex-wrap: wrap; /*Zeilenumbruch bei Bedarf*/
+  justify-content:center;
+  
+}
+
+.results img{
+  width: 200px;
+  height: 200px;
+  
+}
+
+.results p{
+  font-family: 'Times New Roman', Times, serif; 
+  
+}
+.hide {
+  display: none;
+}
+.move-up {
+  margin-top: -100px; /* Die genaue Höhe kann je nach deinem Design variieren */
+}
+/* Für das responsive Menü in CSS */
+.navigation {
+  display: none;
+}
+.page{
+  transform: translateY(-100px);
+}
+/* Stile für kleinere Bildschirme */
+@media screen and (max-width: 950px) {
+  /* Stil für die Navigation auf kleineren Bildschirmen: Angezeigt */
+  .navigation {
+      display: block;
+      background-color: #333; /* Hintergrundfarbe der Navigation */
+      padding: 10px;
+  }
+
+  .navigation ul {
+      list-style: none; /
+      padding: 0;
+      display: flex;
+      justify-content: center;
+  }
+
+  .navigation li {
+      margin: 0 10px;
+  }
+
+  .navigation a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+  }
+
+  .navigation a:hover {
+      text-decoration: underline;
+  }
+
+  .navi ul {
+    display: none; /* Verstecken Sie das Menü für kleinere Bildschirme */
+  }
+}
+
+/* Stile für kleinere Bildschirme */
+@media screen and (max-width: 380px) {
+  .logo img {
+      max-width: 180px;
+      height: 60px;
+    
+       
+  }
+  .content-container {
+    font-size: 16px;
+  }
+  .results img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Stile für kleinere Bildschirme */
+@media screen and (max-width: 1270px) {
+  .img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img img {
+    max-width: 170px;
+    height: 80px;
+    margin: 2.5px;
+  }
+}
+
+/* Stile für kleinere Bildschirme */
+@media screen and (max-width: 1200px) {
+  .img img {
+    max-width: 130px;
+    height: 80px;
+  }
+}
+
+/* Stile für kleinere Bildschirme */
+@media screen and (max-width: 740px) {
+  .img {
+    display: none;
+  }
+}
+
+.product-item {
+  flex: 0 0 calc(24% - 20px); /* Breite der Produktkacheln (Anpassung nach Bedarf) */
+  border: 3px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+.user-item {
+  margin-bottom: 20px;
+}
+.product-title {
+  margin-top: 5px;
+}
+.cart-button {
+  margin-top: 10px;
+}
+.cart-list {
+  border: 1px solid #000;
+  padding: 5px;
+  list-style: none;
+  display: none;
+}
+.product-details img{
+  width: 300px;
+}
